@@ -24,5 +24,4 @@ const startGame = (gameDescription, getQuestionAndAnswer) => {
 
   console.log(`Congratulations, ${name}!`);
 };
-
 export default startGame;
