@@ -1,7 +1,7 @@
 #!/usr/bin/env node
+import { getRandomNumber, getRandomOperator } from '../utils.js';
+import startGame from '../index.js';
 
-import { getRandomNumber } from '../src/utils.js';
-import startGame from '../src/index.js';
 
 const gcd = (a, b) => {
   while (b) {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { getRandomNumber, getRandomOperator } from '../../src/utils.js';
-import startGame from '../../src/index.js';
+import { getRandomNumber, getRandomOperator } from '../utils.js';
+import startGame from '../index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
-import { getRandomNumber } from '../src/utils.js'; 
-import startGame from '../src/index.js';
+import startGame from '../index.js';
+import { getRandomNumber } from '../utils.js';
+
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

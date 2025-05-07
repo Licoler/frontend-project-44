@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { getRandomNumber, getRandomOperator } from '../../src/utils.js';
-import startGame from '../../src/index.js';
+import { getRandomNumber, getRandomOperator } from '../utils.js';
+import startGame from '../index.js';
 
 const calculate = (num1, num2, operator) => {
   switch (operator) {
