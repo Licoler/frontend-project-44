@@ -9,62 +9,71 @@
 
 ---
 
-## Установка
+# Установка
 
 ```bash
 $ npm install
 $ npm link
+```
+# Игры
 
-Игры
-
-1. Проверка на чётность (brain-even)
-Описание:
+## 1. Проверка на чётность (brain-even)
+**Описание:**
 Показывается случайное число. Нужно ответить yes, если число чётное, и no, если нечётное.
 
-Запуск:
+### Запуск:
 
+```
 node src/games/brain-even.js
-Пример игры:
+```
+
+### Пример игры:
 [![asciicast](https://asciinema.org/a/YN3RldVEDRbGF225PwONJejL3.svg)](https://asciinema.org/a/YN3RldVEDRbGF225PwONJejL3)
 
 
-2. Калькулятор (brain-calc)
-Описание:
+## 2. Калькулятор (brain-calc)
+**Описание:**
 Игроку показывается математическое выражение (например, 35 + 16). Нужно ввести правильный результат.
 
-Запуск:
-
+### Запуск:
+```
 node src/games/brain-calc.js
-Пример игры:
+```
+### Пример игры:
 [![asciicast](https://asciinema.org/a/lalVhjaq4LRW5Ud2j0IKuxQOp.svg)](https://asciinema.org/a/lalVhjaq4LRW5Ud2j0IKuxQOp)
 
 
-3. НОД (brain-gcd)
-Описание:
+## 3. НОД (brain-gcd)
+**Описание:**
 Показаны два числа. Нужно ввести наибольший общий делитель (НОД) этих чисел.
 
-Запуск:
-
+### Запуск:
+```
 node src/games/brain-gcd.js
-Пример игры:
+```
+### Пример игры:
 [![asciicast](https://asciinema.org/a/HqNZQcxNGfTHrRZRx5hCx6cWa.svg)](https://asciinema.org/a/HqNZQcxNGfTHrRZRx5hCx6cWa)
 
 
-4. Арифметическая прогрессия (brain-progression)
-Описание:
+## 4. Арифметическая прогрессия (brain-progression)
+**Описание:**
 Показан ряд чисел с пропущенным элементом. Нужно определить недостающее число.
 
-Запуск:
+### Запуск:
+```
 node src/games/brain-progression.js
-Пример игры:
+```
+### Пример игры:
 [![asciicast](https://asciinema.org/a/BaUtMOlfz9tHkpyLSvjyLmLYZ.svg)](https://asciinema.org/a/BaUtMOlfz9tHkpyLSvjyLmLYZ)
 
 
- Простое ли число? (brain-prime)
-Описание:
+## 5. Простое ли число? (brain-prime)
+**Описание:**
 Показано число. Нужно ответить yes, если оно простое, и no, если нет.
 
-Запуск:
+### Запуск:
+```
 node src/games/brain-prime.js
-Пример игры:
+```
+### Пример игры:
 [![asciicast]( https://asciinema.org/a/oXQiMoUSLeBKJQMzF9zGvqdHr.svg)]( https://asciinema.org/a/oXQiMoUSLeBKJQMzF9zGvqdHr)
