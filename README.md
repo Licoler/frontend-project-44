@@ -17,63 +17,74 @@ npm link
 ```
 # Игры
 
-## 1. Проверка на чётность (brain-even)
-**Описание:**
-Показывается случайное число. Нужно ответить yes, если число чётное, и no, если нечётное.
+1. **Brain Even**
+   - **Описание**: В этой игре вам нужно определить, является ли число четным или нечетным.
+   - **Как играть**: Если число четное, ответьте `yes`. Если число нечетное, ответьте `no`.
+   - **Запуск**:  
+     Для игры выполните команду в терминале:
+     ```bash
+     npx brain-even
+     ```
+   - **Пример**:
+[![asciicast](https://asciinema.org/a/0aq1ZY3AAbevSExOUESHMqpWz.svg)](https://asciinema.org/a/0aq1ZY3AAbevSExOUESHMqpWz)
 
-### Запуск:
+
+1. **Brain Calc**
+   - **Описание**: Решайте простые математические выражения. Вам будет предложена математическая задача, и нужно посчитать результат.
+   - **Как играть**: Ответьте на выражение результатом вычисления.
+   - **Запуск**:  
+     Для игры выполните команду в терминале:
+     ```bash
+     npx brain-calc
+     ```
+   - **Пример**:
+     ![Пример игры Brain Calc](https://asciinema.org/a/your-asciinema-link-here)
+
+2. **Brain GCD**
+   - **Описание**: Найдите наибольший общий делитель (НОД) двух чисел.
+   - **Как играть**: Для каждой пары чисел найдите и укажите их НОД.
+   - **Запуск**:  
+     Для игры выполните команду в терминале:
+     ```bash
+     npx brain-gcd
+     ```
+   - **Пример**:
+     ![Пример игры Brain GCD](https://asciinema.org/a/your-asciinema-link-here)
+
+3. **Brain Prime**
+   - **Описание**: Определите, является ли заданное число простым.
+   - **Как играть**: Ответьте `yes`, если число простое, и `no`, если оно не простое.
+   - **Запуск**:  
+     Для игры выполните команду в терминале:
+     ```bash
+     npx brain-prime
+     ```
+   - **Пример**:
+     ![Пример игры Brain Prime](https://asciinema.org/a/your-asciinema-link-here)
+
+4. **Brain Progression**
+   - **Описание**: Завершите прогрессию, определив недостающее число в последовательности.
+   - **Как играть**: Вам будет дана прогрессия с пропущенным числом. Ваша задача — найти это число.
+   - **Запуск**:  
+     Для игры выполните команду в терминале:
+     ```bash
+     npx brain-progression
+     ```
+   - **Пример**:
+     ![Пример игры Brain Progression](https://asciinema.org/a/your-asciinema-link-here)
+
+## Установка
+
+Вы можете установить проект глобально с помощью npm:
+
+```bash
+npm install -g brain-games
 
 ```
-src/games/brain-even.js
-```
-
-### Пример игры:
-[![asciicast](https://asciinema.org/a/YN3RldVEDRbGF225PwONJejL3.svg)](https://asciinema.org/a/YN3RldVEDRbGF225PwONJejL3)
 
 
-## 2. Калькулятор (brain-calc)
-**Описание:**
-Игроку показывается математическое выражение (например, 35 + 16). Нужно ввести правильный результат.
-
-### Запуск:
-```
-src/games/brain-calc.js
-```
-### Пример игры:
-[![asciicast](https://asciinema.org/a/lalVhjaq4LRW5Ud2j0IKuxQOp.svg)](https://asciinema.org/a/lalVhjaq4LRW5Ud2j0IKuxQOp)
 
 
-## 3. НОД (brain-gcd)
-**Описание:**
-Показаны два числа. Нужно ввести наибольший общий делитель (НОД) этих чисел.
-
-### Запуск:
-```
-src/games/brain-gcd.js
-```
-### Пример игры:
-[![asciicast](https://asciinema.org/a/HqNZQcxNGfTHrRZRx5hCx6cWa.svg)](https://asciinema.org/a/HqNZQcxNGfTHrRZRx5hCx6cWa)
 
 
-## 4. Арифметическая прогрессия (brain-progression)
-**Описание:**
-Показан ряд чисел с пропущенным элементом. Нужно определить недостающее число.
 
-### Запуск:
-```
-src/games/brain-progression.js
-```
-### Пример игры:
-[![asciicast](https://asciinema.org/a/BaUtMOlfz9tHkpyLSvjyLmLYZ.svg)](https://asciinema.org/a/BaUtMOlfz9tHkpyLSvjyLmLYZ)
-
-
-## 5. Простое ли число? (brain-prime)
-**Описание:**
-Показано число. Нужно ответить yes, если оно простое, и no, если нет.
-
-### Запуск:
-```
-src/games/brain-prime.js
-```
-### Пример игры:
-[![asciicast]( https://asciinema.org/a/oXQiMoUSLeBKJQMzF9zGvqdHr.svg)]( https://asciinema.org/a/oXQiMoUSLeBKJQMzF9zGvqdHr)

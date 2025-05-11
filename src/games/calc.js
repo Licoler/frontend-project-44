@@ -27,4 +27,8 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-startGame(gameDescription, getQuestionAndAnswer);
+const runGame = () => {
+  startGame(gameDescription, getQuestionAndAnswer);
+};
+
+export default runGame;

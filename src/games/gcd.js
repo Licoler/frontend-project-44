@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-import { getRandomNumber, getRandomOperator } from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 import startGame from '../index.js';
-
 
 const gcd = (a, b) => {
   while (b) {
@@ -20,4 +19,4 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-startGame(gameDescription, getQuestionAndAnswer);
+export default () => startGame(gameDescription, getQuestionAndAnswer);
