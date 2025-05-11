@@ -22,10 +22,9 @@ const getQuestionAndAnswer = () => {
 
 const checkAnswer = (userAnswer, correctAnswer) => {
   if (userAnswer === correctAnswer) {
-    return "Correct!";
-  } else {
-    return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again!`;
+    return 'Correct!';
   }
+  return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again!`;
 };
 
 export default () => startGame(gameDescription, getQuestionAndAnswer, checkAnswer);

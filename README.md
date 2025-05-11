@@ -71,11 +71,3 @@ npm link
      ```
    - **Пример**:
      [![asciicast](https://asciinema.org/a/8L9j2eVFt7JA95GZcftb90prh.svg)](https://asciinema.org/a/8L9j2eVFt7JA95GZcftb90prh)
-
-
-
-
-
-
-
-
