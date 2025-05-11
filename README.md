@@ -26,7 +26,7 @@ npm link
      npx brain-even
      ```
    - **Пример**:
-[![asciicast](https://asciinema.org/a/0aq1ZY3AAbevSExOUESHMqpWz.svg)](https://asciinema.org/a/0aq1ZY3AAbevSExOUESHMqpWz)
+    [![asciicast](https://asciinema.org/a/0aq1ZY3AAbevSExOUESHMqpWz.svg)](https://asciinema.org/a/0aq1ZY3AAbevSExOUESHMqpWz)
 
 
 1. **Brain Calc**
@@ -38,7 +38,7 @@ npm link
      npx brain-calc
      ```
    - **Пример**:
-     ![Пример игры Brain Calc](https://asciinema.org/a/your-asciinema-link-here)
+     [![asciicast](https://asciinema.org/a/FVeGDz27PLM2TWtK1uypCc8Aq.svg)](https://asciinema.org/a/FVeGDz27PLM2TWtK1uypCc8Aq)
 
 2. **Brain GCD**
    - **Описание**: Найдите наибольший общий делитель (НОД) двух чисел.
@@ -49,8 +49,7 @@ npm link
      npx brain-gcd
      ```
    - **Пример**:
-     ![Пример игры Brain GCD](https://asciinema.org/a/your-asciinema-link-here)
-
+     [![asciicast](https://asciinema.org/a/1MYO2oiIhU8mvm5JYLTL3eAGd.svg)](https://asciinema.org/a/1MYO2oiIhU8mvm5JYLTL3eAGd)
 3. **Brain Prime**
    - **Описание**: Определите, является ли заданное число простым.
    - **Как играть**: Ответьте `yes`, если число простое, и `no`, если оно не простое.
@@ -60,7 +59,7 @@ npm link
      npx brain-prime
      ```
    - **Пример**:
-     ![Пример игры Brain Prime](https://asciinema.org/a/your-asciinema-link-here)
+     [![asciicast](https://asciinema.org/a/AZovejlTG52CRX5Sq2kDYGyho.svg)](https://asciinema.org/a/AZovejlTG52CRX5Sq2kDYGyho)
 
 4. **Brain Progression**
    - **Описание**: Завершите прогрессию, определив недостающее число в последовательности.
@@ -71,7 +70,7 @@ npm link
      npx brain-progression
      ```
    - **Пример**:
-     ![Пример игры Brain Progression](https://asciinema.org/a/your-asciinema-link-here)
+     [![asciicast](https://asciinema.org/a/8L9j2eVFt7JA95GZcftb90prh.svg)](https://asciinema.org/a/8L9j2eVFt7JA95GZcftb90prh)
 
 ## Установка
 
