@@ -12,8 +12,8 @@
 # Установка
 
 ```bash
-$ npm install
-$ npm link
+npm install
+npm link
 ```
 # Игры
 
@@ -24,7 +24,7 @@ $ npm link
 ### Запуск:
 
 ```
-node src/games/brain-even.js
+src/games/brain-even.js
 ```
 
 ### Пример игры:
@@ -37,7 +37,7 @@ node src/games/brain-even.js
 
 ### Запуск:
 ```
-node src/games/brain-calc.js
+src/games/brain-calc.js
 ```
 ### Пример игры:
 [![asciicast](https://asciinema.org/a/lalVhjaq4LRW5Ud2j0IKuxQOp.svg)](https://asciinema.org/a/lalVhjaq4LRW5Ud2j0IKuxQOp)
@@ -49,7 +49,7 @@ node src/games/brain-calc.js
 
 ### Запуск:
 ```
-node src/games/brain-gcd.js
+src/games/brain-gcd.js
 ```
 ### Пример игры:
 [![asciicast](https://asciinema.org/a/HqNZQcxNGfTHrRZRx5hCx6cWa.svg)](https://asciinema.org/a/HqNZQcxNGfTHrRZRx5hCx6cWa)
@@ -61,7 +61,7 @@ node src/games/brain-gcd.js
 
 ### Запуск:
 ```
-node src/games/brain-progression.js
+src/games/brain-progression.js
 ```
 ### Пример игры:
 [![asciicast](https://asciinema.org/a/BaUtMOlfz9tHkpyLSvjyLmLYZ.svg)](https://asciinema.org/a/BaUtMOlfz9tHkpyLSvjyLmLYZ)
@@ -73,7 +73,7 @@ node src/games/brain-progression.js
 
 ### Запуск:
 ```
-node src/games/brain-prime.js
+src/games/brain-prime.js
 ```
 ### Пример игры:
 [![asciicast]( https://asciinema.org/a/oXQiMoUSLeBKJQMzF9zGvqdHr.svg)]( https://asciinema.org/a/oXQiMoUSLeBKJQMzF9zGvqdHr)
