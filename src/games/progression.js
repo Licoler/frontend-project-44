@@ -10,18 +10,18 @@ const getQuestionAndAnswer = () => {
   const start = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 5);
 
-  console.log(`Progression length: ${length}, start: ${start}, step: ${step}`); // Debugging
+  console.log(`Progression length: ${length}, start: ${start}, step: ${step}`);
 
   const progression = Array.from({ length }, (_, index) => start + index * step);
 
-  console.log(`Generated progression: ${progression.join(' ')}`); // Debugging
+  console.log(`Generated progression: ${progression.join(' ')}`);
 
   const hiddenIndex = getRandomNumber(0, length - 1);
   const correctAnswer = progression[hiddenIndex];
 
   if (correctAnswer === undefined) {
     console.error("Error: correctAnswer is undefined");
-    console.log(`Progression before hiding: ${progression.join(' ')}`); // Debugging
+    console.log(`Progression before hiding: ${progression.join(' ')}`);
     process.exit(1);
   }
 

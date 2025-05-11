@@ -72,14 +72,6 @@ npm link
    - **Пример**:
      [![asciicast](https://asciinema.org/a/8L9j2eVFt7JA95GZcftb90prh.svg)](https://asciinema.org/a/8L9j2eVFt7JA95GZcftb90prh)
 
-## Установка
-
-Вы можете установить проект глобально с помощью npm:
-
-```bash
-npm install -g brain-games
-
-```
 
 
 
