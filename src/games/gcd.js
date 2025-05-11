@@ -3,10 +3,12 @@ import { getRandomNumber } from '../utils.js';
 import startGame from '../index.js';
 
 const gcd = (a, b) => {
-  while (b) {
-    [a, b] = [b, a % b];
+  let x = a;
+  let y = b;
+  while (y) {
+    [x, y] = [y, x % y];
   }
-  return a;
+  return x;
 };
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
