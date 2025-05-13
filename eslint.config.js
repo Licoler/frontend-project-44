@@ -24,6 +24,7 @@ export default [
         ecmaVersion: 'latest',
         sourceType: 'module',
       },
+      extends: 'airbnb-base',
     },
     plugins: { import: importPlugin },
     rules: {
