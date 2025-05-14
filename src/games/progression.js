@@ -18,11 +18,12 @@ const getArithmeticProgression = () => {
 
 const getQuestionAndAnswer = () => {
   const progression = getArithmeticProgression();
-  const randomIndex = getRandomNumber(0, progressionLength);
+  const randomIndex = getRandomNumber(0, progressionLength - 1);
 
   const correctAnswer = String(progression[randomIndex]);
   progression[randomIndex] = '..';
-  const question = progression;
+
+  const question = `Question: ${progression.join(' ')}`;
 
   return [question, correctAnswer];
 };
