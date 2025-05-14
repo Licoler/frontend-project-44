@@ -1,26 +1,36 @@
-import startGame from '../index.js';
-import { getRandomInt } from '../utils.js';
+import runGame from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
+const operationSymbols = ['+', '-', '*'];
 const description = 'What is the result of the expression?';
 
-const operations = ['+', '-', '*'];
+const getRandomOperationSymbol = (symbols) => {
+  const symbolsLength = symbols.length;
+  const randomIndex = getRandomNumber(0, symbolsLength);
+  const randomSymbol = symbols[randomIndex];
+  return randomSymbol;
+};
 
-const calculate = (a, b, operator) => {
-  switch (operator) {
-    case '+': return a + b;
-    case '-': return a - b;
-    case '*': return a * b;
-    default: throw new Error(`Unknown operator: ${operator}`);
+const calcArithmeticOperation = (symbol, firstValue, secondValue) => {
+  switch (symbol) {
+    case '+': return firstValue + secondValue;
+    case '-': return firstValue - secondValue;
+    case '*': return firstValue * secondValue;
+    default: return null;
   }
 };
 
-const getRoundData = () => {
-  const a = getRandomInt(1, 10);
-  const b = getRandomInt(1, 10);
-  const operator = operations[getRandomInt(0, operations.length - 1)];
-  const question = `${a} ${operator} ${b}`;
-  const correctAnswer = String(calculate(a, b, operator));
+const getQuestionAndAnswer = () => {
+  const randomSymbol = getRandomOperationSymbol(operationSymbols);
+  const firstNumber = getRandomNumber(0, 10);
+  const secondNubmer = getRandomNumber(0, 10);
+
+  const question = `${firstNumber} ${randomSymbol} ${secondNubmer}`;
+  const correctAnswer = String(calcArithmeticOperation(randomSymbol, firstNumber, secondNubmer));
+
   return [question, correctAnswer];
 };
 
-export default () => startGame(description, getRoundData);
+export default () => {
+  runGame(description, getQuestionAndAnswer);
+};
