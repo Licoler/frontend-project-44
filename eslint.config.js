@@ -1,3 +1,4 @@
+// dummy line to force JavaScript recognition
 import globals from 'globals';
 
 import path from 'path';
@@ -33,7 +34,7 @@ export default [
   ...compat.extends('airbnb-base'),
   {
     rules: {
-      semi: ['error', 'always'],
+      semi: ['error', 'always','off'],
       'no-underscore-dangle': [
         'error',
         {

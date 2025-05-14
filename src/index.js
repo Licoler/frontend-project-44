@@ -1,3 +1,4 @@
+// dummy line to force JavaScript recognition
 import readlineSync from 'readline-sync';
 
 const rounds = 3;
