@@ -1,34 +1,26 @@
-#!/usr/bin/env node
-
-import { getRandomNumber, getRandomOperator } from '../utils.js';
 import startGame from '../index.js';
+import { getRandomInt } from '../utils.js';
 
-const calculate = (num1, num2, operator) => {
+const description = 'What is the result of the expression?';
+
+const operations = ['+', '-', '*'];
+
+const calculate = (a, b, operator) => {
   switch (operator) {
-    case '+':
-      return num1 + num2;
-    case '-':
-      return num1 - num2;
-    case '*':
-      return num1 * num2;
-    default:
-      throw new Error('Unknown operator');
+    case '+': return a + b;
+    case '-': return a - b;
+    case '*': return a * b;
+    default: throw new Error(`Unknown operator: ${operator}`);
   }
 };
 
-const gameDescription = 'What is the result of the expression?';
-
-const getQuestionAndAnswer = () => {
-  const num1 = getRandomNumber();
-  const num2 = getRandomNumber();
-  const operator = getRandomOperator();
-  const question = `${num1} ${operator} ${num2}`;
-  const correctAnswer = calculate(num1, num2, operator).toString();
+const getRoundData = () => {
+  const a = getRandomInt(1, 10);
+  const b = getRandomInt(1, 10);
+  const operator = operations[getRandomInt(0, operations.length - 1)];
+  const question = `${a} ${operator} ${b}`;
+  const correctAnswer = String(calculate(a, b, operator));
   return [question, correctAnswer];
 };
 
-const runGame = () => {
-  startGame(gameDescription, getQuestionAndAnswer);
-};
-
-export default runGame;
+export default () => startGame(description, getRoundData);

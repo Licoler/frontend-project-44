@@ -1,41 +1,22 @@
-#!/usr/bin/env node
-
-import { getRandomNumber } from '../utils.js';
 import startGame from '../index.js';
+import { getRandomInt } from '../utils.js';
 
-const gameDescription = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
-const getQuestionAndAnswer = () => {
-  const length = Math.max(getRandomNumber(5, 10), 5);
-  const start = getRandomNumber(1, 10);
-  const step = getRandomNumber(1, 5);
+const getProgression = (start, step, length) => (
+  Array.from({ length }, (_, i) => start + i * step)
+);
 
-  console.log(`Progression length: ${length}, start: ${start}, step: ${step}`);
-
-  const progression = Array.from({ length }, (_, index) => start + index * step);
-
-  console.log(`Generated progression: ${progression.join(' ')}`);
-
-  const hiddenIndex = getRandomNumber(0, length - 1);
-  const correctAnswer = progression[hiddenIndex];
-
-  if (correctAnswer === undefined) {
-    console.error('Error: correctAnswer is undefined');
-    console.log(`Progression before hiding: ${progression.join(' ')}`);
-    process.exit(1);
-  }
-
+const getRoundData = () => {
+  const start = getRandomInt(1, 10);
+  const step = getRandomInt(1, 5);
+  const length = 10;
+  const hiddenIndex = getRandomInt(0, length - 1);
+  const progression = getProgression(start, step, length);
+  const correctAnswer = String(progression[hiddenIndex]);
   progression[hiddenIndex] = '..';
   const question = progression.join(' ');
-
-  return [question, correctAnswer.toString()];
+  return [question, correctAnswer];
 };
 
-const checkAnswer = (userAnswer, correctAnswer) => {
-  if (userAnswer.trim() === correctAnswer) {
-    return 'Correct!';
-  }
-  return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again!`;
-};
-
-export default () => startGame(gameDescription, getQuestionAndAnswer, checkAnswer);
+export default () => startGame(description, getRoundData);
