@@ -8,3 +8,4 @@ const brainProgression = () => {
 };
 
 export default brainProgression;
+//аааауа 
