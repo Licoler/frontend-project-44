@@ -9,14 +9,14 @@ const greeting = () => {
 };
 
 const getRandomProgression = (length) => {
-  const num = Math.round(Math.random() * length);
-  const randomIndex = Math.round(Math.random() * length);
-  const progression = [];
-  for (let i = 0; i < length; i += 1) {
-    progression.push(num * i);
-  }
-  const hiddenNumber = progression.at(randomIndex);
-  progression[randomIndex] = '..';
+  const start = getRandomInt(50);
+  const step = getRandomInt(10) + 1;
+  const hiddenIndex = Math.floor(Math.random() * length);
+
+  const progression = Array.from({ length }, (_, i) => start + i * step);
+  const hiddenNumber = progression[hiddenIndex];
+  progression[hiddenIndex] = '..';
+
   return { progression, hiddenNumber };
 };
 
