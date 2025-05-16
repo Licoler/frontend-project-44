@@ -9,7 +9,7 @@ const generateRound = () => {
   const b = getRandomInt(100)
   return {
     question: `${a} ${b}`,
-    answer: String(gcd(a, b))
+    answer: String(gcd(a, b)),
   }
 }
 

@@ -18,7 +18,7 @@ const generateRound = () => {
 
   return {
     question: `${a} ${operator} ${b}`,
-    answer: String(calculate(a, b, operator))
+    answer: String(calculate(a, b, operator)),
   }
 }
 

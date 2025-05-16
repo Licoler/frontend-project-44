@@ -9,9 +9,9 @@ rules:
   semi: [error, never]
   'no-console': off
   'import/extensions': [error, always]
-  'arrow-parens': [error, as-needed]
+  'arrow-parens': [error, always]  
+  'comma-dangle': [error, always-multiline]
   'operator-linebreak': [error, after]
-  'comma-dangle': [error, never]
   'implicit-arrow-linebreak': [error, below]
   'eol-last': [error, always]
   'no-plusplus': off

@@ -14,7 +14,7 @@ const generateRound = () => {
 
   return {
     question: progression.join(' '),
-    answer
+    answer,
   }
 }
 

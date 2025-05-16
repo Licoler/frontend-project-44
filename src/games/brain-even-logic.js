@@ -1,14 +1,14 @@
 import gameEngine from '../index.js'
 import getRandomInt from '../utils.js'
 
-const isEven = num =>
+const isEven = (num) =>
   num % 2 === 0
 
 const generateRound = () => {
   const number = getRandomInt(100)
   return {
     question: String(number),
-    answer: isEven(number) ? 'yes' : 'no'
+    answer: isEven(number) ? 'yes' : 'no',
   }
 }
 
