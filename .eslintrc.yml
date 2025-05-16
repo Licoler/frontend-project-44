@@ -9,7 +9,7 @@ rules:
   semi: [error, never]
   'no-console': off
   'import/extensions': [error, always]
-  'arrow-parens': [error, always]  
+  'arrow-parens': [error, as-needed]
   'comma-dangle': [error, always-multiline]
   'operator-linebreak': [error, after]
   'implicit-arrow-linebreak': [error, below]
