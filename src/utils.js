@@ -1,3 +1,2 @@
-const getRandomInt = (range) => Math.ceil(Math.random() * range);
-
-export default getRandomInt;
+export default max =>
+  Math.floor(Math.random() * max)

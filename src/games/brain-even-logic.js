@@ -1,10 +1,18 @@
-import gameEngine from '../index.js';
+import gameEngine from '../index.js'
+import getRandomInt from '../utils.js'
 
-const brainEven = () => {
-  const gameType = 'even-odd';
-  const question = 'Answer "yes" if the number is even, otherwise answer "no".';
+const isEven = num =>
+  num % 2 === 0
 
-  gameEngine(gameType, question);
-};
+const generateRound = () => {
+  const number = getRandomInt(100)
+  return {
+    question: String(number),
+    answer: isEven(number) ? 'yes' : 'no'
+  }
+}
 
-export default brainEven;
+export default () => {
+  const description = 'Answer "yes" if the number is even, otherwise answer "no".'
+  gameEngine(description, generateRound)
+}

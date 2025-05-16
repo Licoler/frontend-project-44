@@ -1,10 +1,19 @@
-import gameEngine from '../index.js';
+import gameEngine from '../index.js'
+import getRandomInt from '../utils.js'
 
-const brainGCD = () => {
-  const gameType = 'GCD';
-  const question = 'Find the greatest common divisor of given numbers.';
+const gcd = (a, b) =>
+  (b === 0 ? a : gcd(b, a % b))
 
-  gameEngine(gameType, question);
-};
+const generateRound = () => {
+  const a = getRandomInt(100)
+  const b = getRandomInt(100)
+  return {
+    question: `${a} ${b}`,
+    answer: String(gcd(a, b))
+  }
+}
 
-export default brainGCD;
+export default () => {
+  const description = 'Find the greatest common divisor of given numbers.'
+  gameEngine(description, generateRound)
+}
